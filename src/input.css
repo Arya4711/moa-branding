@@ -8,6 +8,10 @@
   transition: all 1s;
 }
 
+.shift-in.reduced {
+  transform: translateY(25%);
+}
+
 .shift-in.loaded {
   opacity: 1;
   transform: translateY(0);
@@ -28,4 +32,28 @@
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.bg-branding-package-mockup {
+  background-image: url("./assets/branding-package-mockup.png");
+}
+
+.bg-branding-package-website {
+  background-image: url("./assets/branding-package-website.png");
+}
+
+.bg-branding-package {
+  background-image: url("./assets/branding-package.png");
+}
+
+.bg-color-palette-fonts {
+  background-image: url("./assets/color-palette-fonts.png");
+}
+
+.bg-logo-design {
+  background-image: url("./assets/logo-design.png");
+}
+
+.bg-logo-redesign {
+  background-image: url("./assets/logo-redesign.png");
 }
