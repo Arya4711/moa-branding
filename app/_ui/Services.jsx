@@ -1,10 +1,10 @@
+"use client";
 import React from "react";
-import "../output.css";
-import ServiceBox from "./ServiceBox.jsx";
-import shiftInElements from "../hooks/shiftInElements.js";
+import ServiceBox from "./ServiceBox";
+import shiftInElements from "../_lib/shiftInElements";
 
-function Services() {
-  var targetRefs = shiftInElements();
+export default function Services() {
+  const targetRefs = shiftInElements();
 
   return (
     <>
@@ -17,7 +17,9 @@ function Services() {
       </a>
       <ul
         ref={(el) => {
-          targetRefs.current[0] = el;
+          if (el && targetRefs.current.indexOf(el) === -1) {
+            targetRefs.current.push(el);
+          }
         }}
         className="shift-in reduced mx-20 mt-10 flex flex-wrap justify-between"
       >
@@ -37,7 +39,9 @@ function Services() {
       </ul>
       <ul
         ref={(el) => {
-          targetRefs.current[1] = el;
+          if (el && targetRefs.current.indexOf(el) === -1) {
+            targetRefs.current.push(el);
+          }
         }}
         className="shift-in reduced mx-20 mb-20 mt-10 flex flex-wrap justify-between"
       >
@@ -66,5 +70,3 @@ function Services() {
     </>
   );
 }
-
-export default Services;

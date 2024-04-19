@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-function shiftInElements() {
+export default function shiftInElements() {
   const targetRefs = useRef([]);
 
   useEffect(() => {
@@ -25,5 +25,3 @@ function shiftInElements() {
 
   return targetRefs;
 }
-
-export default shiftInElements;

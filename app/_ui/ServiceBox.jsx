@@ -1,7 +1,7 @@
+"use client";
 import React from "react";
-import "../output.css";
 
-function ServiceBox({ image, text, link }) {
+export default function ServiceBox({ image, text, link }) {
   return (
     <>
       <a
@@ -15,5 +15,3 @@ function ServiceBox({ image, text, link }) {
     </>
   );
 }
-
-export default ServiceBox;

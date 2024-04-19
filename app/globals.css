@@ -35,25 +35,25 @@
 }
 
 .bg-branding-package-mockup {
-  background-image: url("./assets/branding-package-mockup.png");
+  background-image: url("/branding-package-mockup.png");
 }
 
 .bg-branding-package-website {
-  background-image: url("./assets/branding-package-website.png");
+  background-image: url("/branding-package-website.png");
 }
 
 .bg-branding-package {
-  background-image: url("./assets/branding-package.png");
+  background-image: url("/branding-package.png");
 }
 
 .bg-color-palette-fonts {
-  background-image: url("./assets/color-palette-fonts.png");
+  background-image: url("/color-palette-fonts.png");
 }
 
 .bg-logo-design {
-  background-image: url("./assets/logo-design.png");
+  background-image: url("/logo-design.png");
 }
 
 .bg-logo-redesign {
-  background-image: url("./assets/logo-redesign.png");
+  background-image: url("/logo-redesign.png");
 }
