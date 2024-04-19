@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="mb-10 bg-neutral-900 px-20 pb-20 pt-5 text-white">
+      <div className="mb-10 bg-neutral-900 px-20 pb-16 pt-5 text-white">
         <div className="flex justify-between">
-          <div className="mt-12 text-left">
+          <div className="mt-12 text-left sm:max-md:text-center">
             <div
-              className="shift-in text-8xl text-sky-400"
+              className="shift-in text-8xl md:max-2xl:text-7xl text-sky-400"
               ref={(el) => {
                 if (el && targetRefs.current.indexOf(el) === -1) {
                   targetRefs.current.push(el);
@@ -23,19 +23,10 @@ export default function Home() {
               }}
             >
               Your vision,
+              <div className="text-white">our creation.</div>
             </div>
             <div
-              className="shift-in text-8xl"
-              ref={(el) => {
-                if (el && targetRefs.current.indexOf(el) === -1) {
-                  targetRefs.current.push(el);
-                }
-              }}
-            >
-              our creation.
-            </div>
-            <div
-              className="shift-in mt-5 text-3xl delay-150"
+              className="shift-in mt-5 text-3xl md:max-2xl:text-2xl delay-150"
               ref={(el) => {
                 if (el && targetRefs.current.indexOf(el) === -1) {
                   targetRefs.current.push(el);
@@ -67,7 +58,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <video className="w-[600px]" autoPlay muted>
+          <video className="w-[37rem] sm:max-md:hidden" autoPlay muted>
             <source src="/laptop-turning.mp4" type="video/mp4" />
           </video>
         </div>
