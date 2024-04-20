@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.svg" sizes="any" />
         <meta name="darkreader-lock" />
       </head>
       <body className={inter.className}>{children}</body>

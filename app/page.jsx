@@ -58,7 +58,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <video className="w-[37rem] sm:max-md:hidden" autoPlay muted>
+          <video className="w-[37rem] max-md:hidden" autoPlay muted>
             <source src="/laptop-turning.mp4" type="video/mp4" />
           </video>
         </div>
