@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import NavBar from "../_ui/NavBar";
+import MemberDescription from "./_ui/MemberDescription";
 import Image from "next/image";
 
 export default function About() {
@@ -17,7 +18,7 @@ export default function About() {
             setSelected(null);
             setHasTransitioned(false);
           }}
-          className="border-neutral-500 w-full rounded-[7rem] md:max-2xl:rounded-[5rem] border bg-neutral-200 my-20 basis-4/5 grid grid-cols-3 divide-x overflow-hidden"
+          className="relative border-neutral-500 w-full rounded-[7rem] md:max-2xl:rounded-[5rem] border bg-neutral-200 my-20 basis-4/5 grid grid-cols-3 divide-x overflow-hidden"
         >
           <div
             className="text-7xl md:max-2xl:text-5xl text-sky-500 bg-sky-100 h-2/3 md:max-2xl:h-full outline outline-sky-500 outline-1 divide-x divide-sky-500 flex items-center flex-col justify-around"
@@ -69,7 +70,7 @@ export default function About() {
               selected === 1
                 ? hasTransitioned
                   ? "transition-none"
-                  : "-translate-x-[195%]"
+                  : "2xl:-translate-x-[195%] md:max-2xl:-translate-x-[23rem]"
                 : ""
             } m-auto transition-all duration-500`}
             onMouseEnter={() => {
@@ -92,7 +93,7 @@ export default function About() {
               selected === 2
                 ? hasTransitioned
                   ? "transition-none"
-                  : "-translate-x-[390%]"
+                  : "2xl:-translate-x-[195%] md:max-2xl:-translate-x-[46rem]"
                 : ""
             } m-auto transition-all duration-500`}
             onMouseEnter={() => {
@@ -100,17 +101,43 @@ export default function About() {
             }}
             onTransitionEnd={() => setHasTransitioned(true)}
           />
-          <div
-            className={`text-7xl transition-all absolute left-1/3 top-1/2 ${
-              !hasTransitioned
-                ? "opacity-0"
-                : selected === 0
-                ? "duration-500 delay-500 opacity-100"
-                : "opacity-0 delay-0 duration-0"
-            }`}
-          >
-            Micah Massey
-          </div>
+          <MemberDescription
+            name="Micah Massey"
+            title="Jack of all Trades"
+            points={[
+              "3+ years of Adobe experience",
+              "Experience in front-end and back-end development",
+              "Codecademy HTML and CSS certified",
+              "Broad knowledge of graphic design",
+            ]}
+            hasTransitioned={hasTransitioned}
+            selected={selected}
+            toCompare={0}
+          />
+          <MemberDescription
+            name="Owen Crosby"
+            title="Graphic Design Specialist"
+            points={[
+              "Photoshop certified",
+              "InDesign certified",
+              "2+ years of experience in Illustrator",
+              "Broad knowledge of graphic design",
+            ]}
+            hasTransitioned={hasTransitioned}
+            selected={selected}
+            toCompare={1}
+          />
+          <MemberDescription
+            name="Arya Malekjahani"
+            title="Programmer"
+            points={[
+              "Experience in front-end and back-end development",
+              "React.js, Next.js, Tailwind CSS, Node.js, Express.js, MongoDB",
+            ]}
+            hasTransitioned={hasTransitioned}
+            selected={selected}
+            toCompare={2}
+          />
         </div>
       </div>
     </>
