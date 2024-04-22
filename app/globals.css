@@ -25,6 +25,10 @@
   transition-delay: 300ms;
 }
 
+.delay-500 {
+  transition-delay: 500ms;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
