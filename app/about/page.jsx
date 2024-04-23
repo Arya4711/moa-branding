@@ -1,8 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import NavBar from "../_ui/NavBar";
 import MemberDescription from "./_ui/MemberDescription";
-import Image from "next/image";
+import MemberLabel from "./_ui/MemberLabel";
+import MemberImage from "./_ui/MemberImage";
 
 export default function About() {
   const [selected, setSelected] = useState(null);
@@ -12,94 +13,56 @@ export default function About() {
     <>
       <NavBar />
       <div className="flex flex-col justify-around items-center mx-20 text-center h-[50rem]">
-        <div className="text-8xl mt-5">Meet the team behind the scenes.</div>
+        <h1 className="text-8xl mt-5">Meet the team behind the scenes.</h1>
+        <h2 className="text-xl">Hover to learn more</h2>
         <div
           onMouseLeave={() => {
             setSelected(null);
             setHasTransitioned(false);
           }}
-          className="relative border-neutral-500 w-full rounded-[7rem] md:max-2xl:rounded-[5rem] border bg-neutral-200 my-20 basis-4/5 grid grid-cols-3 divide-x overflow-hidden"
+          className="relative border-neutral-500 w-full rounded-[7rem] md:max-2xl:rounded-[5rem] border my-20 bg-neutral-200 basis-4/5 grid grid-cols-3 divide-x overflow-hidden"
         >
-          <div
-            className="text-7xl md:max-2xl:text-5xl text-sky-500 bg-sky-100 h-2/3 md:max-2xl:h-full outline outline-sky-500 outline-1 divide-x divide-sky-500 flex items-center flex-col justify-around"
-            onMouseEnter={() => setSelected(0)}
-          >
-            MICAH
-          </div>
-          <div
-            className="text-7xl md:max-2xl:text-5xl text-sky-500 bg-sky-100 h-2/3 md:max-2xl:h-full outline outline-sky-500 outline-1 divide-x divide-sky-500 flex items-center flex-col justify-around"
-            onMouseEnter={() => setSelected(1)}
-          >
-            OWEN
-          </div>
-          <div
-            className="text-7xl md:max-2xl:text-5xl text-sky-500 bg-sky-100 h-2/3 md:max-2xl:h-full outline outline-sky-500 outline-1 divide-x divide-sky-500 flex items-center flex-col justify-around"
-            onMouseEnter={() => setSelected(2)}
-          >
-            ARYA
-          </div>
-          <Image
+          <MemberLabel
+            name="MICAH"
+            setSelected={setSelected}
+            toSetSelected={1}
+          />
+          <MemberLabel
+            name="OWEN"
+            setSelected={setSelected}
+            toSetSelected={2}
+          />
+          <MemberLabel
+            name="ARYA"
+            setSelected={setSelected}
+            toSetSelected={3}
+          />
+          <MemberImage
             src="/micah-headshot.png"
             alt="Micah Massey"
-            width={300}
-            height={300}
-            className={`${
-              selected === 1 || selected === 2
-                ? hasTransitioned
-                  ? "hidden"
-                  : "opacity-0"
-                : ""
-            } m-auto transition-all duration-500`}
-            onMouseEnter={() => {
-              if (!selected) setSelected(0);
-            }}
-            onTransitionEnd={() => setHasTransitioned(true)}
+            selected={selected}
+            setSelected={setSelected}
+            hasTransitioned={hasTransitioned}
+            setHasTransitioned={setHasTransitioned}
+            toCompare={1}
           />
-          <Image
+          <MemberImage
             src="/owen-headshot.png"
             alt="Owen Crosby"
-            width={300}
-            height={300}
-            className={`${
-              selected === 0 || selected === 2
-                ? hasTransitioned
-                  ? "hidden"
-                  : "opacity-0"
-                : ""
-            } ${
-              selected === 1
-                ? hasTransitioned
-                  ? "transition-none"
-                  : "2xl:-translate-x-[195%] md:max-2xl:-translate-x-[23rem]"
-                : ""
-            } m-auto transition-all duration-500`}
-            onMouseEnter={() => {
-              if (!selected) setSelected(1);
-            }}
-            onTransitionEnd={() => setHasTransitioned(true)}
+            selected={selected}
+            setSelected={setSelected}
+            hasTransitioned={hasTransitioned}
+            setHasTransitioned={setHasTransitioned}
+            toCompare={2}
           />
-          <Image
+          <MemberImage
             src="/arya-headshot.png"
             alt="Arya Malekjahani"
-            width={300}
-            height={300}
-            className={`${
-              selected === 0 || selected === 1
-                ? hasTransitioned
-                  ? "hidden"
-                  : "opacity-0"
-                : ""
-            } ${
-              selected === 2
-                ? hasTransitioned
-                  ? "transition-none"
-                  : "2xl:-translate-x-[195%] md:max-2xl:-translate-x-[46rem]"
-                : ""
-            } m-auto transition-all duration-500`}
-            onMouseEnter={() => {
-              if (!selected) setSelected(2);
-            }}
-            onTransitionEnd={() => setHasTransitioned(true)}
+            selected={selected}
+            setSelected={setSelected}
+            hasTransitioned={hasTransitioned}
+            setHasTransitioned={setHasTransitioned}
+            toCompare={3}
           />
           <MemberDescription
             name="Micah Massey"
@@ -112,7 +75,7 @@ export default function About() {
             ]}
             hasTransitioned={hasTransitioned}
             selected={selected}
-            toCompare={0}
+            toCompare={1}
           />
           <MemberDescription
             name="Owen Crosby"
@@ -125,18 +88,18 @@ export default function About() {
             ]}
             hasTransitioned={hasTransitioned}
             selected={selected}
-            toCompare={1}
+            toCompare={2}
           />
           <MemberDescription
             name="Arya Malekjahani"
-            title="Programmer"
+            title="Full-Stack Engineer"
             points={[
               "Experience in front-end and back-end development",
-              "React.js, Next.js, Tailwind CSS, Node.js, Express.js, MongoDB",
+              "React, Next.js, Tailwind CSS, Node.js, Express.js, MongoDB",
             ]}
             hasTransitioned={hasTransitioned}
             selected={selected}
-            toCompare={2}
+            toCompare={3}
           />
         </div>
       </div>

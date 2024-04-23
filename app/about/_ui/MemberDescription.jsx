@@ -1,3 +1,4 @@
+"use client";
 export default function MemberDescription({
   name,
   title,
@@ -8,7 +9,7 @@ export default function MemberDescription({
 }) {
   return (
     <div
-      className={`text-left transition-all absolute 2xl:left-1/2 md:max-2xl:left-1/3 md:max-2xl:top-1/3 ${
+      className={`text-left transition-all absolute left-1/3 top-1/3 ${
         !hasTransitioned
           ? "opacity-0 duration-0"
           : selected === toCompare
@@ -20,7 +21,9 @@ export default function MemberDescription({
       <h2 className="text-3xl text-sky-800">{title}</h2>
       <ul className="list-disc">
         {points.map((point) => (
-          <li className="ml-10">{point}</li>
+          <li className="ml-10" key={point}>
+            {point}
+          </li>
         ))}
       </ul>
     </div>
