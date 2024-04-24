@@ -30,7 +30,7 @@ export default function MemberImage({
             ? "2xl:-translate-x-[195%] md:max-2xl:-translate-x-[23rem]"
             : "2xl:-translate-x-[390%] md:max-2xl:-translate-x-[46rem]" // TODO: replace rem with percentage
           : ""
-      } m-auto transition-all duration-500 row-span-3 z-10`}
+      } m-auto transition-all duration-500 row-span-3 z-10 md:max-2xl:w-60`}
       onMouseEnter={() => {
         if (!selected) setSelected(toCompare);
       }}
