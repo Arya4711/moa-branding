@@ -26,9 +26,9 @@ export default function MemberImage({
         selected !== 1 && selected === toCompare
           ? hasTransitioned
             ? "transition-none"
-            : `2xl:-translate-x-[${
-                (toCompare - 1) * 195
-              }%] md:max-2xl:-translate-x-[${(toCompare - 1) * 23}rem]` // TODO: replace rem with percentage
+            : selected === 2
+            ? "2xl:-translate-x-[195%] md:max-2xl:-translate-x-[23rem]"
+            : "2xl:-translate-x-[390%] md:max-2xl:-translate-x-[46rem]" // TODO: replace rem with percentage
           : ""
       } m-auto transition-all duration-500 row-span-3`}
       onMouseEnter={() => {
