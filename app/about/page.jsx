@@ -96,6 +96,7 @@ export default function About() {
             points={[
               "Experience in front-end and back-end development",
               "React, Next.js, Tailwind CSS, Node.js, Express.js, MongoDB",
+              "Java and Python certified",
             ]}
             hasTransitioned={hasTransitioned}
             selected={selected}
