@@ -4,6 +4,7 @@ import shiftInElements from "./_lib/shiftInElements";
 import Link from "next/link";
 import React from "react";
 import Services from "./_ui/Services";
+import Footer from "./_ui/Footer";
 
 export default function Home() {
   const targetRefs = shiftInElements();
@@ -64,6 +65,7 @@ export default function Home() {
         </div>
       </div>
       <Services />
+      <Footer />
     </>
   );
 }
