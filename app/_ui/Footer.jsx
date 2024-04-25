@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="px-20 h-20 bg-neutral-900 flex justify-between items-center">
       <p className="text-left text-white">
         <span className="text-sky-500">&copy; 2024 </span>
-        MOA Branding. All rights reserved.
+        MOA Branding LLC. All rights reserved.
       </p>
       <div className="flex justify-around w-40">
         <SocialMediaIcon
