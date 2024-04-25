@@ -4,6 +4,7 @@ import NavBar from "../_ui/NavBar";
 import MemberDescription from "./_ui/MemberDescription";
 import MemberLabel from "./_ui/MemberLabel";
 import MemberImage from "./_ui/MemberImage";
+import Footer from "../_ui/Footer";
 
 export default function About() {
   const [selected, setSelected] = useState(null);
@@ -13,7 +14,9 @@ export default function About() {
     <>
       <NavBar />
       <div className="flex flex-col justify-around items-center mx-20 text-center h-[50rem]">
-        <h1 className="text-8xl mt-5">Meet the team behind the scenes.</h1>
+        <h1 className="2xl:text-8xl md:max-2xl:text-7xl mt-5">
+          Meet the team behind the scenes.
+        </h1>
         <h2 className="text-xl">Hover to learn more</h2>
         <div
           onMouseLeave={() => {
@@ -104,6 +107,7 @@ export default function About() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
