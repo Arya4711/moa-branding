@@ -1,4 +1,5 @@
 import { Lato } from "next/font/google";
+import SmoothScroll from "./_ui/SmoothScroll";
 import "./globals.css";
 
 const inter = Lato({ subsets: ["latin"], weight: "300" });
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <meta name="darkreader-lock" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}><SmoothScroll root>{children}</SmoothScroll></body>
     </html>
   );
 }
