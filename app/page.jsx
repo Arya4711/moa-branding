@@ -27,7 +27,7 @@ export default function Home() {
               <div className="text-white">our creation.</div>
             </div>
             <div
-              className="shift-in mt-5 text-3xl md:max-2xl:text-2xl delay-150"
+              className="shift-in mt-5 text-3xl md:max-2xl:text-2xl delay-300"
               ref={(el) => {
                 if (el && targetRefs.current.indexOf(el) === -1) {
                   targetRefs.current.push(el);
@@ -38,7 +38,7 @@ export default function Home() {
               affordable price.
             </div>
             <div
-              className="shift-in mt-5 space-x-5 delay-300"
+              className="shift-in mt-5 space-x-5 delay-500"
               ref={(el) => {
                 if (el && targetRefs.current.indexOf(el) === -1) {
                   targetRefs.current.push(el);
