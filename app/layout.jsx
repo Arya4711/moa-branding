@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <meta name="darkreader-lock" />
       </head>
-      <body className={inter.className}><SmoothScroll root>{children}</SmoothScroll></body>
+      <body className={inter.className}><SmoothScroll>{children}</SmoothScroll></body>
     </html>
   );
 }
