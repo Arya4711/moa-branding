@@ -16,21 +16,19 @@ export default function MemberImage({
       alt={alt}
       width={300}
       height={300}
-      className={`${
-        selected && selected !== toCompare
-          ? hasTransitioned
-            ? "hidden"
-            : "opacity-0"
-          : ""
-      } ${
-        selected !== 1 && selected === toCompare
+      className={`${selected && selected !== toCompare
+        ? hasTransitioned
+          ? "hidden"
+          : "opacity-0"
+        : ""
+        } ${selected !== 1 && selected === toCompare
           ? hasTransitioned
             ? "transition-none"
             : selected === 2
-            ? "2xl:-translate-x-[195%] md:max-2xl:-translate-x-[23rem]"
-            : "2xl:-translate-x-[390%] md:max-2xl:-translate-x-[46rem]" // TODO: replace rem with percentage
+              ? "2xl:-translate-x-[36.25rem] md:max-2xl:-translate-x-[23rem]"
+              : "2xl:-translate-x-[72.5rem] md:max-2xl:-translate-x-[46rem]"
           : ""
-      } m-auto transition-all duration-500 row-span-3 z-10 md:max-2xl:w-60`}
+        } m-auto transition-all duration-500 row-span-3 z-10 md:max-2xl:w-60`}
       onMouseEnter={() => {
         if (!selected) setSelected(toCompare);
       }}
