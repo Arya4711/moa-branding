@@ -1,6 +1,7 @@
 import { Lato } from "next/font/google";
 import SmoothScroll from "./_ui/SmoothScroll";
 import "./globals.css";
+import "overlayscrollbars/overlayscrollbars.css";
 
 const inter = Lato({ subsets: ["latin"], weight: "300" });
 
