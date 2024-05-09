@@ -25,8 +25,8 @@ export default function MemberImage({
           ? hasTransitioned
             ? "transition-none"
             : selected === 2
-              ? "2xl:-translate-x-[36.25rem] md:max-2xl:-translate-x-[23rem]"
-              : "2xl:-translate-x-[72.5rem] md:max-2xl:-translate-x-[46rem]"
+              ? "2xl:-translate-x-[36.5rem] md:max-2xl:-translate-x-[23rem]"
+              : "2xl:-translate-x-[73.25rem] md:max-2xl:-translate-x-[46rem]"
           : ""
         } m-auto transition-all duration-500 row-span-3 z-10 md:max-2xl:w-60`}
       onMouseEnter={() => {
