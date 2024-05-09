@@ -1,7 +1,6 @@
 "use client";
 import { ReactLenis } from "lenis/react";
 import { OverlayScrollbars } from "overlayscrollbars";
-import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { useEffect } from "react";
 
 export default function SmoothScroll({ children }) {
@@ -14,6 +13,6 @@ export default function SmoothScroll({ children }) {
   }, []);
 
   return (
-    <ReactLenis root><OverlayScrollbarsComponent defer>{children}</OverlayScrollbarsComponent></ReactLenis>
+    <ReactLenis root>{children}</ReactLenis>
   );
 }
