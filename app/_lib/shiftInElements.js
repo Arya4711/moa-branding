@@ -1,26 +1,21 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-export default function shiftInElements() {
+export default function ShiftInElements() {
   const targetRefs = useRef([]);
+  gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("loaded");
-        }
+  useGSAP(() => {
+    const shiftInElements = gsap.utils.toArray(".shift-in");
+    shiftInElements.forEach((shiftInElement) => {
+      gsap.to(shiftInElement, {
+        scrollTrigger: shiftInElement,
+        opacity: 1,
+        y: 0,
       });
     });
-
-    targetRefs.current.forEach((target) => {
-      observer.observe(target);
-    });
-
-    return () => {
-      targetRefs.current.forEach((target) => {
-        observer.unobserve(target);
-      });
-    };
   });
 
   return targetRefs;
