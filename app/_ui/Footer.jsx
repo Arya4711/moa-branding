@@ -21,7 +21,7 @@ export default function Footer() {
           size={10}
         />
         <SocialMediaIcon
-          href="https://www.github.com/arya4711/moa-branding/"
+          href="https://www.tiktok.com/@moabranding"
           src="/tiktok-logo.svg"
           alt="GitHub repository"
           size={10}
