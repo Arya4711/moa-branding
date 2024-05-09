@@ -7,7 +7,7 @@ import Services from "./_ui/Services";
 import Footer from "./_ui/Footer";
 
 export default function Home() {
-  const targetRefs = shiftInElements();
+  shiftInElements();
 
   return (
     <>
@@ -17,33 +17,18 @@ export default function Home() {
           <div className="mt-12 text-left sm:max-md:text-center">
             <div
               className="shift-in text-8xl md:max-2xl:text-7xl text-sky-400"
-              ref={(el) => {
-                if (el && targetRefs.current.indexOf(el) === -1) {
-                  targetRefs.current.push(el);
-                }
-              }}
             >
               Your vision,
               <div className="text-white">our creation.</div>
             </div>
             <div
               className="shift-in mt-5 text-3xl md:max-2xl:text-2xl delay-300"
-              ref={(el) => {
-                if (el && targetRefs.current.indexOf(el) === -1) {
-                  targetRefs.current.push(el);
-                }
-              }}
             >
               We create high quality branding plans and websites at an
               affordable price.
             </div>
             <div
               className="shift-in mt-5 space-x-5 delay-500"
-              ref={(el) => {
-                if (el && targetRefs.current.indexOf(el) === -1) {
-                  targetRefs.current.push(el);
-                }
-              }}
             >
               <Link
                 href="#"

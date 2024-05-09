@@ -1,10 +1,8 @@
-import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function ShiftInElements() {
-  const targetRefs = useRef([]);
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
@@ -14,9 +12,8 @@ export default function ShiftInElements() {
         scrollTrigger: shiftInElement,
         opacity: 1,
         y: 0,
+        duration: 0.1
       });
     });
   });
-
-  return targetRefs;
 }
