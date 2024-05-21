@@ -9,14 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "lenis": "^1.0.45",
-    "next": "^14.2.3",
-=======
     "@gsap/react": "^2.1.1",
     "gsap": "^3.12.5",
-    "next": "^14.2.2",
->>>>>>> shift-in
+    "next": "^14.2.3",
     "overlayscrollbars": "^2.7.3",
     "react": "^18",
     "react-dom": "^18.3.1",
