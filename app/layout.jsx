@@ -1,5 +1,5 @@
 import { Lato } from "next/font/google";
-import SmoothScroll from "./_ui/SmoothScroll";
+import CustomScroll from "./_ui/CustomScroll";
 import "./globals.css";
 import "overlayscrollbars/overlayscrollbars.css";
 
@@ -12,12 +12,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <head>
         <link rel="icon" href="/favicon.svg" sizes="any" />
         <meta name="darkreader-lock" />
       </head>
-      <body className={inter.className}><SmoothScroll>{children}</SmoothScroll></body>
+      <body className={inter.className}><CustomScroll>{children}</CustomScroll></body>
     </html>
   );
 }
