@@ -12,7 +12,7 @@ export default function ShiftInElements() {
         scrollTrigger: shiftInElement,
         opacity: 1,
         y: 0,
-        duration: 0.1
+        duration: 0.1,
       });
     });
   });
