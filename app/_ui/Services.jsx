@@ -1,11 +1,8 @@
 "use client";
 import React from "react";
 import ServiceBox from "./ServiceBox";
-import shiftInElements from "../_lib/shiftInElements";
 
 export default function Services() {
-  const targetRefs = shiftInElements();
-
   return (
     <>
       <a
@@ -16,11 +13,6 @@ export default function Services() {
         SERVICES
       </a>
       <div
-        ref={(el) => {
-          if (el && targetRefs.current.indexOf(el) === -1) {
-            targetRefs.current.push(el);
-          }
-        }}
         className="shift-in reduced mx-20 mt-10 flex justify-between"
       >
         <ServiceBox image="logo-redesign" text="Logo Redesign" link="#" />
@@ -32,11 +24,6 @@ export default function Services() {
         />
       </div>
       <div
-        ref={(el) => {
-          if (el && targetRefs.current.indexOf(el) === -1) {
-            targetRefs.current.push(el);
-          }
-        }}
         className="shift-in reduced mx-20 mb-20 mt-10 flex justify-between"
       >
         <ServiceBox

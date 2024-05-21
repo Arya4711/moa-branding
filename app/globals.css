@@ -12,11 +12,6 @@
   transform: translateY(25%);
 }
 
-.shift-in.loaded {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .delay-150 {
   transition-delay: 150ms;
 }
