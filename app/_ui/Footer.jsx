@@ -2,12 +2,12 @@ import SocialMediaIcon from "./SocialMediaIcon";
 
 export default function Footer() {
   return (
-    <footer className="px-20 h-20 bg-neutral-900 flex justify-between items-center">
+    <footer className="flex h-20 items-center justify-between bg-neutral-900 px-20">
       <p className="text-left text-white">
         <span className="text-sky-500">&copy; 2024 </span>
         MOA Branding LLC. All rights reserved.
       </p>
-      <div className="flex justify-around w-40">
+      <div className="flex w-40 justify-around">
         <SocialMediaIcon
           href="https://www.github.com/arya4711/moa-branding/"
           src="/github-logo.svg"
