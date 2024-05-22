@@ -57,6 +57,14 @@
   background-image: url("/logo-redesign.png");
 }
 
+.bg-nav-logo {
+  background-image: url("/nav-logo.svg");
+}
+
+.bg-moa-branding-logo {
+  background-image: url("/moa-branding-logo.svg");
+}
+
 html.lenis,
 html.lenis body {
   height: auto;

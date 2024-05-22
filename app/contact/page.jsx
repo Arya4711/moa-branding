@@ -4,7 +4,6 @@ import SectionButton from "../_ui/SectionButton";
 export default function Contact() {
   return (
     <>
-      <SectionButton text="CONTACT" id="contact" />
       <h1 className="mx-auto text-6xl">
         Let&apos;s make it
         <span className="text-sky-500"> happen.</span>
