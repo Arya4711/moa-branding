@@ -1,12 +1,14 @@
 import NavBar from "../_ui/NavBar";
 import Footer from "../_ui/Footer";
 import FormInput from "./_ui/FormInput";
+import SectionButton from "../_ui/SectionButton";
 
 export default function Contact() {
   return (
     <>
       <div className="flex h-screen flex-col justify-between">
         <NavBar />
+        <SectionButton text="CONTACT" id="contact" />
         <h1 className="mx-auto text-6xl">
           Let&apos;s make it
           <span className="text-sky-500"> happen.</span>
