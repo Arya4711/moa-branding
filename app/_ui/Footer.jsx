@@ -2,7 +2,7 @@ import SocialMediaIcon from "./SocialMediaIcon";
 
 export default function Footer() {
   return (
-    <footer className="flex h-20 items-center justify-between bg-neutral-900 px-20">
+    <footer className="flex h-20 items-center justify-between bg-neutral-900 px-20 py-10">
       <p className="text-left text-white">
         <span className="text-sky-500">&copy; 2024 </span>
         MOA Branding LLC. All rights reserved.
