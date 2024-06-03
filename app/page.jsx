@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="mb-10 bg-neutral-900 px-20 pb-16 pt-5 text-white">
+      <div className="bg-neutral-900 px-20 pb-16 pt-5 text-white">
         <div className="flex justify-between">
           <div className="mt-12 text-left sm:max-md:text-center">
             <div className="shift-in text-8xl text-sky-400 md:max-2xl:text-7xl">
