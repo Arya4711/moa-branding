@@ -1,5 +1,5 @@
+"use client";
 import FormInput from "./_ui/FormInput";
-import SectionButton from "../_ui/SectionButton";
 
 export default function Contact() {
   return (

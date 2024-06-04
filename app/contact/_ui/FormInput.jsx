@@ -1,3 +1,5 @@
+"use client";
+
 export default function FormInput({ placeholder, form, name, type = "text" }) {
   return (
     <input

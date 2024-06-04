@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 
 export default function ServiceBox({ image, text, link }) {
   return (

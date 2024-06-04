@@ -1,3 +1,4 @@
+"use client";
 import SocialMediaIcon from "./SocialMediaIcon";
 
 export default function Footer() {

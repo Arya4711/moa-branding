@@ -1,8 +1,7 @@
 "use client";
 import shiftInElements from "./_lib/shiftInElements";
-import Link from "next/link";
-import React from "react";
 import Services from "./_ui/Services";
+import Button from "./_ui/Button";
 
 export default function Home() {
   shiftInElements();
@@ -21,18 +20,8 @@ export default function Home() {
               affordable price.
             </div>
             <div className="shift-in mt-5 space-x-5 delay-500">
-              <Link
-                href="#"
-                className="inline-block rounded-md border border-solid border-neutral-700 bg-neutral-800 px-6 py-2 no-underline transition hover:border-neutral-500"
-              >
-                BOOK A MEETING
-              </Link>
-              <Link
-                href="#"
-                className="inline-block rounded-md border border-solid border-neutral-700 bg-neutral-800 px-6 py-2 no-underline transition hover:border-neutral-500"
-              >
-                GET A FREE QUOTE
-              </Link>
+              <Button text="BOOK A MEETING" />
+              <Button text="GET A FREE QUOTE" />
             </div>
           </div>
           <video className="w-[37rem] max-md:hidden" autoPlay muted>

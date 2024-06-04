@@ -1,3 +1,4 @@
+"use client";
 import SectionButton from "../_ui/SectionButton";
 import PortfolioBox from "./_ui/PortfolioBox";
 

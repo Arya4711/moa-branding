@@ -1,3 +1,4 @@
+"use client";
 import SectionButton from "../_ui/SectionButton";
 import PricingBox from "./_ui/PricingBox";
 
@@ -6,42 +7,124 @@ export default function Pricing() {
     {
       name: "Logo Redesign",
       price: "25.00",
+      description: [
+        {
+          image: { src: "/broom.svg", alt: "Broom" },
+          text: "Give your logo a fresh new look.",
+        },
+        {
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          text: "Pick from a group of concepts.",
+        },
+        {
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "4 final edits allowed.",
+        },
+      ],
     },
     {
-      name: "Logo Redesign",
+      name: "I'm",
       price: "25.00",
+      description: [
+        {
+          image: { src: "/broom.svg", alt: "Broom" },
+          text: "Give your logo a fresh new look.",
+        },
+        {
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          text: "Pick from a group of concepts.",
+        },
+        {
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "4 final edits allowed.",
+        },
+      ],
     },
     {
-      name: "Logo Redesign",
+      name: "Genius",
       price: "25.00",
+      description: [
+        {
+          image: { src: "/broom.svg", alt: "Broom" },
+          text: "Give your logo a fresh new look.",
+        },
+        {
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          text: "Pick from a group of concepts.",
+        },
+        {
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "4 final edits allowed.",
+        },
+      ],
     },
     {
-      name: "Logo Redesign",
+      name: "Micah",
       price: "25.00",
+      description: [
+        {
+          image: { src: "/broom.svg", alt: "Broom" },
+          text: "Give your logo a fresh new look.",
+        },
+        {
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          text: "Pick from a group of concepts.",
+        },
+        {
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "4 final edits allowed.",
+        },
+      ],
     },
     {
-      name: "Logo Redesign",
+      name: "Massey",
       price: "25.00",
+      description: [
+        {
+          image: { src: "/broom.svg", alt: "Broom" },
+          text: "Give your logo a fresh new look.",
+        },
+        {
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          text: "Pick from a group of concepts.",
+        },
+        {
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "4 final edits allowed.",
+        },
+      ],
     },
     {
-      name: "Logo Redesign",
+      name: "Malekahani",
       price: "25.00",
+      description: [
+        {
+          image: { src: "/broom.svg", alt: "Broom" },
+          text: "Give your logo a fresh new look.",
+        },
+        {
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          text: "Pick from a group of concepts.",
+        },
+        {
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "4 final edits allowed.",
+        },
+      ],
     },
   ];
 
   return (
     <>
       <SectionButton text="PRICING" id="pricing" />
-      <div className="mx-20 mb-10 flex flex-col justify-around">
-        <div className="grid grid-cols-3 gap-10">
-          {pricingBoxes.map((item, index) => (
-            <PricingBox
-              name={pricingBoxes[index].name}
-              price={pricingBoxes[index].price}
-              key={pricingBoxes[index].name}
-            />
-          ))}
-        </div>
+      <h1 className="mx-20 my-5 text-center text-5xl">
+        Let's make something<span className="text-sky-500"> great.</span>
+      </h1>
+      <h2 className="mx-20 text-center text-lg">Hover to learn more</h2>
+      <div className="mx-20 grid h-[60vh] grid-cols-3 items-center gap-10">
+        {pricingBoxes.map((item) => (
+          <PricingBox {...item} key={item.name} />
+        ))}
       </div>
     </>
   );
