@@ -5,110 +5,155 @@ import PricingBox from "./_ui/PricingBox";
 export default function Pricing() {
   const pricingBoxes = [
     {
+      name: "Branding Package",
+      price: "90.00",
+      description: [
+        {
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "Logos, colors, fonts, and business cards.",
+        },
+        {
+          image: {
+            src: "/heart-plus-squares.svg",
+            alt: "Two squares containing a heart and a plus sign",
+          },
+          text: "Multiple renditions of each.",
+        },
+        {
+          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
+          text: "5 edits for each product.",
+        },
+      ],
+    },
+    {
       name: "Logo Redesign",
       price: "25.00",
       description: [
         {
-          image: { src: "/broom.svg", alt: "Broom" },
+          image: { src: "/pencil.svg", alt: "Pencil" },
           text: "Give your logo a fresh new look.",
         },
         {
-          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          image: {
+            src: "/heart-plus-squares.svg",
+            alt: "Two squares containing a heart and a plus sign",
+          },
           text: "Pick from a group of concepts.",
         },
         {
-          image: { src: "/pencil.svg", alt: "Pencil" },
+          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
           text: "4 final edits allowed.",
         },
       ],
     },
     {
-      name: "I'm",
+      name: "Logo Design",
       price: "25.00",
       description: [
         {
-          image: { src: "/broom.svg", alt: "Broom" },
-          text: "Give your logo a fresh new look.",
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "Design tailored to your brand.",
         },
         {
-          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          image: {
+            src: "/heart-plus-squares.svg",
+            alt: "Two squares containing a heart and a plus sign",
+          },
           text: "Pick from a group of concepts.",
         },
         {
-          image: { src: "/pencil.svg", alt: "Pencil" },
+          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
           text: "4 final edits allowed.",
         },
       ],
     },
     {
-      name: "Genius",
+      name: "Business Card Design",
       price: "25.00",
       description: [
         {
-          image: { src: "/broom.svg", alt: "Broom" },
-          text: "Give your logo a fresh new look.",
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "Design tailored to your brand.",
         },
         {
-          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          image: {
+            src: "/heart-plus-squares.svg",
+            alt: "Two squares containing a heart and a plus sign",
+          },
           text: "Pick from a group of concepts.",
         },
         {
-          image: { src: "/pencil.svg", alt: "Pencil" },
+          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
           text: "4 final edits allowed.",
         },
       ],
     },
     {
-      name: "Micah",
+      name: "Color Palette",
       price: "25.00",
       description: [
         {
-          image: { src: "/broom.svg", alt: "Broom" },
-          text: "Give your logo a fresh new look.",
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "Colors tailored to your brand.",
         },
         {
-          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          image: {
+            src: "/heart-plus-squares.svg",
+            alt: "Two squares containing a heart and a plus sign",
+          },
           text: "Pick from a group of concepts.",
         },
         {
-          image: { src: "/pencil.svg", alt: "Pencil" },
+          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
           text: "4 final edits allowed.",
         },
       ],
     },
     {
-      name: "Massey",
-      price: "25.00",
+      name: "Website Design (per page - no template)",
+      price: "200.00",
       description: [
         {
-          image: { src: "/broom.svg", alt: "Broom" },
-          text: "Give your logo a fresh new look.",
+          image: {
+            src: "/monitor-with-pencil.svg",
+            alt: "A pencil shown on a computer monitor",
+          },
+          text: "Create the perfect website for your brand.",
         },
         {
-          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
-          text: "Pick from a group of concepts.",
+          image: {
+            src: "/user-with-pencil.svg",
+            alt: "User icon with a pencil",
+          },
+          text: "Work with the team during the design.",
         },
         {
-          image: { src: "/pencil.svg", alt: "Pencil" },
-          text: "4 final edits allowed.",
+          image: { src: "/browser-box.svg", alt: "Browser box" },
+          text: "5 final edits (per page) allowed.",
         },
       ],
     },
     {
-      name: "Malekahani",
-      price: "25.00",
+      name: "Website Design (per page - with template)",
+      price: "80.00",
       description: [
         {
-          image: { src: "/broom.svg", alt: "Broom" },
-          text: "Give your logo a fresh new look.",
+          image: {
+            src: "/monitor-with-pencil.svg",
+            alt: "A pencil shown on a computer monitor",
+          },
+          text: "One of our website templates tailored to your brand.",
         },
         {
-          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
-          text: "Pick from a group of concepts.",
+          image: {
+            src: "/user-with-pencil.svg",
+            alt: "User icon with a pencil",
+          },
+          text: "Work with the team during the design.",
         },
         {
-          image: { src: "/pencil.svg", alt: "Pencil" },
-          text: "4 final edits allowed.",
+          image: { src: "/browser-box.svg", alt: "Browser box" },
+          text: "5 final edits (per page) allowed.",
         },
       ],
     },
@@ -121,7 +166,7 @@ export default function Pricing() {
         Let's make something<span className="text-sky-500"> great.</span>
       </h1>
       <h2 className="mx-20 text-center text-lg">Hover to learn more</h2>
-      <div className="mx-20 grid h-[60vh] grid-cols-3 items-center gap-10">
+      <div className="mx-20 my-10 grid h-max grid-cols-2 items-center gap-16">
         {pricingBoxes.map((item) => (
           <PricingBox {...item} key={item.name} />
         ))}
