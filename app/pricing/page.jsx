@@ -7,6 +7,7 @@ export default function Pricing() {
     {
       name: "Branding Package",
       price: "90.00",
+      originalPrice: "100.00",
       description: [
         {
           image: { src: "/pencil.svg", alt: "Pencil" },
@@ -24,6 +25,7 @@ export default function Pricing() {
           text: "5 edits for each product.",
         },
       ],
+      bg: "branding-package",
     },
     {
       name: "Logo Redesign",
@@ -45,6 +47,7 @@ export default function Pricing() {
           text: "4 final edits allowed.",
         },
       ],
+      bg: "logo-redesign",
     },
     {
       name: "Logo Design",
@@ -66,6 +69,7 @@ export default function Pricing() {
           text: "4 final edits allowed.",
         },
       ],
+      bg: "logo-design",
     },
     {
       name: "Business Card Design",
@@ -87,14 +91,15 @@ export default function Pricing() {
           text: "4 final edits allowed.",
         },
       ],
+      bg: "business-card-design",
     },
     {
-      name: "Color Palette",
+      name: "Color Palette & Fonts",
       price: "25.00",
       description: [
         {
           image: { src: "/pencil.svg", alt: "Pencil" },
-          text: "Colors tailored to your brand.",
+          text: "Colors and fonts tailored to your brand.",
         },
         {
           image: {

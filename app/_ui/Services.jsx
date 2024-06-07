@@ -21,7 +21,7 @@ export default function Services() {
         />
         <ServiceBox
           image="color-palette-fonts"
-          text="Color Palette + Fonts"
+          text="Color Palette & Fonts"
           link="#"
           basis="30%"
         />
@@ -35,13 +35,13 @@ export default function Services() {
         />
         <ServiceBox
           image="branding-package-mockup"
-          text="Branding Package + Mockup"
+          text="Website Creation (with template)"
           link="#"
           basis="30%"
         />
         <ServiceBox
           image="branding-package-website"
-          text="Branding Package + Website"
+          text="Website Creation (no template)"
           link="#"
           basis="30%"
         />
