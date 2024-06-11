@@ -7,7 +7,7 @@ export default function SocialMediaIcon({ href, src, alt }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`flex h-7 w-7 items-center justify-around rounded-full transition hover:brightness-75`}
+      className={`flex h-8 w-8 items-center justify-around rounded-full transition hover:brightness-75`}
     >
       <Image
         src={src}
