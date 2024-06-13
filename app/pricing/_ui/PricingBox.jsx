@@ -2,18 +2,33 @@
 import Image from "next/image";
 import Button from "@/app/_ui/Button";
 
-export default function PricingBox({ name, price, description }) {
+export default function PricingBox({
+  name,
+  price,
+  originalPrice,
+  description,
+  bg,
+}) {
   return (
     <>
-      <div className="h-32 overflow-hidden rounded-md bg-sky-800 text-white outline outline-2 outline-neutral-300 transition-all hover:h-80">
-        <div className="flex justify-between px-5 py-8 text-2xl">
-          <div>
+      <div
+        className={`bg-${bg} h-60 overflow-hidden rounded-md bg-cover bg-center bg-no-repeat text-white outline outline-2 outline-neutral-300 transition-all hover:h-[30rem]`}
+      >
+        <div className="flex h-60 items-center justify-between px-5 py-8 text-2xl backdrop-blur-md transition-all hover:backdrop-blur-none">
+          <div className="rounded-md bg-black/75 p-5">
             {name}
-            <span className="block font-bold">${price}</span>
+            <span className="block font-bold">
+              ${price}
+              <span
+                className={`m-2 text-sm font-thin ${originalPrice ? "inline" : "hidden"} line-through`}
+              >
+                ${originalPrice}
+              </span>
+            </span>
           </div>
         </div>
-        <ul className="flex h-48 items-center justify-between bg-white p-5">
-          <div className="flex flex-col justify-around text-2xl text-black">
+        <ul className="flex h-60 items-center justify-between bg-white p-5">
+          <div className="flex flex-col justify-around text-xl text-black">
             {description.map((item) => (
               <li className="flex items-center" key={item.text}>
                 <Image
