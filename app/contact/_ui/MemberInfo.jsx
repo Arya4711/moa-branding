@@ -10,14 +10,11 @@ export default function MemberInfo({ name, image, email, phone, linkedIn }) {
     "-" +
     phone.substring(6);
   return (
-    <div className="flex flex-col items-center justify-around rounded-md border border-sky-400 bg-sky-50 p-5">
-      <Image
-        className="inline w-auto"
-        src={image}
-        width={100}
-        height={100}
-        alt={name}
-      />
+    <div className="relative flex w-[32%] flex-col items-center justify-around overflow-hidden rounded-[2.5rem] border border-sky-400 bg-sky-50">
+      <div
+        className={`bg-${image} absolute top-0 h-1/2 w-full bg-cover bg-center`}
+      ></div>
+      <div className="h-1/2"></div>
       <h1 className="inline text-3xl font-bold">{name}</h1>
       <div className="flex h-1/4 flex-col items-center justify-between">
         <a

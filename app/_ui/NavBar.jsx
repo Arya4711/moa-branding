@@ -7,7 +7,13 @@ export default function NavBar() {
   return (
     <nav className="sticky top-0 z-10 flex justify-between bg-neutral-900 px-20 py-3 text-white">
       <Link href="/">
-        <Image src="/nav-logo.svg" alt="Home" width={100} height={100} />
+        <Image
+          src="/nav-logo.svg"
+          className="h-auto"
+          alt="Home"
+          width={100}
+          height={100}
+        />
       </Link>
       <div className="my-auto space-x-10">
         <Link href="/pricing" className="transition hover:brightness-75">

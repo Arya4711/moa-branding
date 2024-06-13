@@ -8,21 +8,21 @@ export default function Contact() {
   const memberInfoData = [
     {
       name: "Micah Massey",
-      image: "/micah-headshot.png",
+      image: "micah-headshot-square",
       email: "micahmahone23@gmail.com",
       phone: "8504189653",
       linkedIn: "micahmahone",
     },
     {
       name: "Owen Crosby",
-      image: "/owen-headshot.png",
+      image: "owen-headshot-square",
       email: "owendcrosby@gmail.com",
       phone: "4072228570",
       linkedIn: "owencrosby",
     },
     {
       name: "Arya Malekjahani",
-      image: "/arya-headshot.png",
+      image: "arya-headshot-square",
       email: "armlk4711@gmail.com",
       phone: "3212103740",
       linkedIn: "arya-malekjahani",

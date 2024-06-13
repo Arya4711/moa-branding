@@ -39,7 +39,7 @@ export default function Form({ action, headers, isPurchase = false }) {
       <div
         className={`${isPurchase ? "block" : "hidden"} flex flex-col items-center justify-between`}
       >
-        <label for="service" className="text-3xl font-bold">
+        <label htmlFor="service" className="text-3xl font-bold">
           WHAT SERVICE WOULD YOU LIKE?
         </label>
         <select
@@ -48,7 +48,9 @@ export default function Form({ action, headers, isPurchase = false }) {
           className="mt-3 block rounded-md bg-neutral-200 p-2 outline outline-1 outline-neutral-400 transition-all hover:brightness-95 focus:bg-sky-50 focus:outline-sky-300"
         >
           {dropDownData.map((item) => (
-            <option value={item}>{item}</option>
+            <option value={item} key={item}>
+              {item}
+            </option>
           ))}
         </select>
       </div>

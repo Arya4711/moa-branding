@@ -11,17 +11,17 @@ export default function Footer() {
     {
       href: "https://www.github.com/arya4711/moa-branding/",
       src: "/github-logo.svg",
-      alt: "GitHub repository",
+      alt: "GitHub Repository",
     },
     {
       href: "https://www.instagram.com/moabrandingfl/",
       src: "/instagram-logo.svg",
-      alt: "Instagram page",
+      alt: "Instagram Page",
     },
     {
       href: "https://www.tiktok.com/@moabranding/",
       src: "/tiktok-logo.svg",
-      alt: "GitHub repository",
+      alt: "TikTok Page",
     },
   ];
   return (
