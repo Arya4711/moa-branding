@@ -10,8 +10,8 @@ export default function NavBar() {
         <Image src="/nav-logo.svg" alt="Home" width={100} height={100} />
       </Link>
       <div className="my-auto space-x-10">
-        <Link href="/services" className="transition hover:brightness-75">
-          Services
+        <Link href="/pricing" className="transition hover:brightness-75">
+          Pricing
         </Link>
         <Link href="/portfolio" className="transition hover:brightness-75">
           Portfolio
@@ -22,7 +22,7 @@ export default function NavBar() {
         <Link href="/contact" className="transition hover:brightness-75">
           Contact
         </Link>
-        <Button href="/pricing" text="START YOUR BRAND" />
+        <Button href="/purchase" text="START YOUR BRAND" />
       </div>
     </nav>
   );
