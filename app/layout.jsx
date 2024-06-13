@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <CustomScroll>
-          <div className="flex h-max flex-col justify-between">
+          <div className="flex h-screen flex-col justify-between">
             <NavBar />
             {children}
             <Footer />
