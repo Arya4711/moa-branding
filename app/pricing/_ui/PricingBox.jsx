@@ -15,7 +15,7 @@ export default function PricingBox({ name, price, description }) {
         <ul className="flex h-48 items-center justify-between bg-white p-5">
           <div className="flex flex-col justify-around text-2xl text-black">
             {description.map((item) => (
-              <li className="flex items-center">
+              <li className="flex items-center" key={item.text}>
                 <Image
                   height={30}
                   width={30}

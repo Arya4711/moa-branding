@@ -51,38 +51,43 @@ export default function Contact() {
             className="mb-10 flex h-5/6 flex-col items-center justify-between"
             id="contact"
             name="contact"
-            action="https://formsubmit.co/armlk4711@gmail.com"
+            action="https://formkeep.com/f/6b48b95e5cf1"
+            target="_blank"
             method="POST"
+            acceptCharset="UTF-8"
+            encType="multipart/form-data"
           >
-            <label className="text-3xl font-bold">YOUR DETAILS</label>
-            <FormInput placeholder="NAME" form="contact" name="name" />
+            <h1 className="text-3xl font-bold">YOUR DETAILS</h1>
+            <FormInput label="Name" placeholder="NAME" name="name" />
             <FormInput
+              label="Email"
               placeholder="EMAIL ADDRESS"
-              form="contact"
               name="email"
               type="email"
-              required
             />
             <FormInput
+              label="Phone (ex. 123-456-7890)"
               placeholder="PHONE NUMBER"
-              form="contact"
               name="phone"
               type="tel"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
             />
-            <label htmlFor="request" className="mt-5 text-3xl font-bold">
-              HOW CAN WE HELP?
-            </label>
-            <textarea
-              className="block rounded-2xl bg-neutral-200 px-5 py-2 outline outline-1 outline-neutral-400 transition hover:brightness-95 focus:bg-sky-50 focus:outline-sky-300"
-              placeholder="SUMMARY"
-              form="contact"
-              id="request"
-              name="request"
-              cols="70"
-              rows="8"
-              required
-            />
-            <button
+            <h1 className="mt-5 text-3xl font-bold">HOW CAN WE HELP?</h1>
+            <div>
+              <label htmlFor="request" className="ml-5 text-lg">
+                Request
+              </label>
+              <textarea
+                className="block rounded-2xl bg-neutral-200 px-5 py-2 outline outline-1 outline-neutral-400 transition hover:brightness-95 focus:bg-sky-50 focus:outline-sky-300"
+                placeholder="REQUEST"
+                id="request"
+                name="request"
+                cols="70"
+                rows="4"
+                required
+              />
+            </div>
+            <input
               type="submit"
               className="rounded-2xl bg-neutral-200 px-10 py-1 outline outline-1 outline-neutral-400 transition hover:cursor-pointer hover:bg-sky-50 hover:outline-sky-300"
               value="SUBMIT"

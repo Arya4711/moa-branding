@@ -118,7 +118,7 @@ export default function Pricing() {
     <>
       <SectionButton text="PRICING" id="pricing" />
       <h1 className="mx-20 my-5 text-center text-5xl">
-        Let's make something<span className="text-sky-500"> great.</span>
+        Let&apos;s make something<span className="text-sky-500"> great.</span>
       </h1>
       <h2 className="mx-20 text-center text-lg">Hover to learn more</h2>
       <div className="mx-20 grid h-[60vh] grid-cols-3 items-center gap-10">
