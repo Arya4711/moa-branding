@@ -85,3 +85,7 @@ html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+.bg-happy-habits-logo {
+  background-image: url("/happy-habits-logo.svg");
+}
