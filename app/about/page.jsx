@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <div className="mx-20 flex h-[50rem] flex-col items-center justify-around text-center">
-      <h1 className="mt-5 md:max-2xl:text-7xl 2xl:text-8xl">
+      <h1 className="mt-5 md:max-2xl:text-6xl 2xl:text-7xl">
         Meet the team behind the scenes.
       </h1>
       <h2 className="text-xl">Hover to learn more</h2>

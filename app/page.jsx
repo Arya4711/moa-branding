@@ -20,8 +20,12 @@ export default function Home() {
               affordable price.
             </div>
             <div className="shift-in mt-5 space-x-5 delay-500">
-              <Button text="BOOK A MEETING" />
-              <Button text="GET A FREE QUOTE" />
+              <Button
+                text="BOOK A MEETING"
+                href="https://calendar.app.google/WJ1hAdc2iSTD9hkm8"
+                target="_blank"
+              />
+              <Button text="GET A FREE QUOTE" href="/pricing" />
             </div>
           </div>
           <video className="w-[37rem] max-md:hidden" autoPlay muted>

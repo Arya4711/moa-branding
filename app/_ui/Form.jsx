@@ -10,7 +10,7 @@ export default function Form({
     { name: "Branding Package ($120.00)", value: "branding-package" },
     { name: "Business Card Design ($60.00)", value: "business-card-design" },
     {
-      name: "Color Palette and Fonts ($50.00)",
+      name: "Color Palette & Fonts ($50.00)",
       value: "color-palette-and-fonts",
     },
     { name: "Logo Design ($50.00)", value: "logo-design" },
