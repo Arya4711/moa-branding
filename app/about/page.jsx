@@ -53,7 +53,7 @@ export default function About() {
         />
         <MemberDescription
           name="Micah Massey"
-          title="Jack of all Trades"
+          title="Full-Stack Designer"
           points={[
             "3+ years of Adobe experience",
             "Experience in front-end and back-end development",

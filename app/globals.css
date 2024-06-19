@@ -24,29 +24,20 @@
   transition-delay: 500ms;
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+.bg-website-design-with-template {
+  background-image: url("/website-design-with-template.png");
 }
 
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.bg-branding-package-mockup {
-  background-image: url("/branding-package-mockup.png");
-}
-
-.bg-branding-package-website {
-  background-image: url("/branding-package-website.png");
+.bg-website-design-no-template {
+  background-image: url("/website-design-no-template.png");
 }
 
 .bg-branding-package {
   background-image: url("/branding-package.png");
 }
 
-.bg-color-palette-fonts {
-  background-image: url("/color-palette-fonts.png");
+.bg-color-palette-and-fonts {
+  background-image: url("/color-palette-and-fonts.png");
 }
 
 .bg-logo-design {
@@ -65,25 +56,20 @@
   background-image: url("/moa-branding-logo.svg");
 }
 
-html.lenis,
-html.lenis body {
-  height: auto;
+.bg-business-card-design {
+  background-image: url("/business-card-design.jpg");
 }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
+.bg-arya-headshot-square {
+  background-image: url("/arya-headshot-square.png");
 }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
+.bg-micah-headshot-square {
+  background-image: url("/micah-headshot-square.png");
 }
 
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
+.bg-owen-headshot-square {
+  background-image: url("/owen-headshot-square.png");
 }
 
 .bg-happy-habits-logo {
