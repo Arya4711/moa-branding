@@ -1,14 +1,28 @@
 "use client";
 import FormInput from "../purchase/_ui/FormInput";
-export default function Form({ action, headers, isPurchase = false }) {
+export default function Form({
+  action,
+  headers,
+  isPurchase = false,
+  service = "",
+}) {
   const dropDownData = [
-    "Branding Package ($120.00)",
-    "Business Card Design ($60.00)",
-    "Color Palette and Fonts ($50.00)",
-    "Logo Design ($50.00)",
-    "Logo Redesign ($50.00)",
-    "Website Design (per page - no template) ($200.00)",
-    "Website Design (per page - with template) ($80.00)",
+    { name: "Branding Package ($120.00)", value: "branding-package" },
+    { name: "Business Card Design ($60.00)", value: "business-card-design" },
+    {
+      name: "Color Palette and Fonts ($50.00)",
+      value: "color-palette-and-fonts",
+    },
+    { name: "Logo Design ($50.00)", value: "logo-design" },
+    { name: "Logo Redesign ($50.00)", value: "logo-redesign" },
+    {
+      name: "Website Design (per page - no template) ($200.00)",
+      value: "website-design-no-template",
+    },
+    {
+      name: "Website Design (per page - with template) ($80.00)",
+      value: "website-design-with-template",
+    },
   ];
   return (
     <form
@@ -46,10 +60,16 @@ export default function Form({ action, headers, isPurchase = false }) {
           id="service"
           name="service"
           className="mt-3 block rounded-md bg-neutral-200 p-2 outline outline-1 outline-neutral-400 transition-all hover:brightness-95 focus:bg-sky-50 focus:outline-sky-300"
+          required
         >
+          <option value="">Please select a service</option>
           {dropDownData.map((item) => (
-            <option value={item} key={item}>
-              {item}
+            <option
+              value={item.value}
+              key={item.value}
+              selected={item.value === service}
+            >
+              {item.name}
             </option>
           ))}
         </select>

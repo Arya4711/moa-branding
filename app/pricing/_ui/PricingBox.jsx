@@ -8,6 +8,7 @@ export default function PricingBox({
   originalPrice,
   description,
   bg,
+  service
 }) {
   return (
     <>
@@ -42,7 +43,7 @@ export default function PricingBox({
               </li>
             ))}
           </div>
-          <Button text="ORDER NOW" />
+          <Button text="ORDER NOW" href={`/purchase?service=${service}`} />
         </ul>
       </div>
     </>

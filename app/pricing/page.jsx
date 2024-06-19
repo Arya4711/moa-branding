@@ -6,6 +6,7 @@ export default function Pricing() {
   const pricingBoxes = [
     {
       name: "Branding Package",
+      service: "branding-package",
       price: "90.00",
       originalPrice: "100.00",
       description: [
@@ -29,6 +30,7 @@ export default function Pricing() {
     },
     {
       name: "Logo Redesign",
+      service: "logo-redesign",
       price: "25.00",
       description: [
         {
@@ -51,6 +53,7 @@ export default function Pricing() {
     },
     {
       name: "Logo Design",
+      service: "logo-design",
       price: "25.00",
       description: [
         {
@@ -73,6 +76,7 @@ export default function Pricing() {
     },
     {
       name: "Business Card Design",
+      service: "business-card-design",
       price: "25.00",
       description: [
         {
@@ -95,6 +99,7 @@ export default function Pricing() {
     },
     {
       name: "Color Palette & Fonts",
+      service: "color-palette-and-fonts",
       price: "25.00",
       description: [
         {
@@ -116,6 +121,7 @@ export default function Pricing() {
     },
     {
       name: "Website Design (per page - no template)",
+      service: "website-design-no-template",
       price: "200.00",
       description: [
         {
@@ -140,6 +146,7 @@ export default function Pricing() {
     },
     {
       name: "Website Design (per page - with template)",
+      service: "website-design-with-template",
       price: "80.00",
       description: [
         {
