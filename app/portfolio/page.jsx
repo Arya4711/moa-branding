@@ -22,6 +22,12 @@ export default function Portfolio() {
       contentText:
         "Happy Habits is a habit tracking website co-developed by our front-end developer, Arya Malekjahani. Although his skills in making our website involves only front-end development, he had to use skills related to full-stack development to develop Happy Habits. Similar to our website, Happy Habits uses Next.js, React.js, and Tailwind CSS for its front-end, but also includes an extensive backend written in TypeScript and documented on its GitHub repository. The full source code can be found on Arya's GitHub profile.",
     },
+    {
+      image: "happy-habits-logo",
+      labelText: "ScentStyle",
+      contentText:
+        "ScentStyle is a hypothetical brand created by our graphic design specialist, Owen Crosby. The brand matches fragrances to outfits, and features a modern interface with pleasing design elements. Similar to the mockup for F1NATICS, Owen created a website mockup for ScentStyle to show what it would look like in action.",
+    },
   ];
   return (
     <>
