@@ -7,8 +7,8 @@ export default function Pricing() {
     {
       name: "Branding Package",
       service: "branding-package",
-      price: "90.00",
-      originalPrice: "100.00",
+      price: "120.00",
+      originalPrice: "160.00",
       description: [
         {
           image: { src: "/pencil.svg", alt: "Pencil" },
@@ -22,62 +22,16 @@ export default function Pricing() {
           text: "Multiple renditions of each.",
         },
         {
-          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
           text: "5 edits for each product.",
         },
       ],
       bg: "branding-package",
     },
     {
-      name: "Logo Redesign",
-      service: "logo-redesign",
-      price: "25.00",
-      description: [
-        {
-          image: { src: "/pencil.svg", alt: "Pencil" },
-          text: "Give your logo a fresh new look.",
-        },
-        {
-          image: {
-            src: "/heart-plus-squares.svg",
-            alt: "Two squares containing a heart and a plus sign",
-          },
-          text: "Pick from a group of concepts.",
-        },
-        {
-          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
-          text: "4 final edits allowed.",
-        },
-      ],
-      bg: "logo-redesign",
-    },
-    {
-      name: "Logo Design",
-      service: "logo-design",
-      price: "25.00",
-      description: [
-        {
-          image: { src: "/pencil.svg", alt: "Pencil" },
-          text: "Design tailored to your brand.",
-        },
-        {
-          image: {
-            src: "/heart-plus-squares.svg",
-            alt: "Two squares containing a heart and a plus sign",
-          },
-          text: "Pick from a group of concepts.",
-        },
-        {
-          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
-          text: "4 final edits allowed.",
-        },
-      ],
-      bg: "logo-design",
-    },
-    {
       name: "Business Card Design",
       service: "business-card-design",
-      price: "25.00",
+      price: "60.00",
       description: [
         {
           image: { src: "/pencil.svg", alt: "Pencil" },
@@ -91,7 +45,7 @@ export default function Pricing() {
           text: "Pick from a group of concepts.",
         },
         {
-          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
           text: "4 final edits allowed.",
         },
       ],
@@ -100,7 +54,7 @@ export default function Pricing() {
     {
       name: "Color Palette & Fonts",
       service: "color-palette-and-fonts",
-      price: "25.00",
+      price: "50.00",
       description: [
         {
           image: { src: "/pencil.svg", alt: "Pencil" },
@@ -114,10 +68,56 @@ export default function Pricing() {
           text: "Pick from a group of concepts.",
         },
         {
-          image: { src: "/mouse-pointer.svg", alt: "Pencil" },
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
           text: "4 final edits allowed.",
         },
       ],
+    },
+    {
+      name: "Logo Design",
+      service: "logo-design",
+      price: "50.00",
+      description: [
+        {
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "Design tailored to your brand.",
+        },
+        {
+          image: {
+            src: "/heart-plus-squares.svg",
+            alt: "Two squares containing a heart and a plus sign",
+          },
+          text: "Pick from a group of concepts.",
+        },
+        {
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          text: "4 final edits allowed.",
+        },
+      ],
+      bg: "logo-design",
+    },
+    {
+      name: "Logo Redesign",
+      service: "logo-redesign",
+      price: "50.00",
+      description: [
+        {
+          image: { src: "/pencil.svg", alt: "Pencil" },
+          text: "Give your logo a fresh new look.",
+        },
+        {
+          image: {
+            src: "/heart-plus-squares.svg",
+            alt: "Two squares containing a heart and a plus sign",
+          },
+          text: "Pick from a group of concepts.",
+        },
+        {
+          image: { src: "/mouse-pointer.svg", alt: "Mouse pointer" },
+          text: "4 final edits allowed.",
+        },
+      ],
+      bg: "logo-redesign",
     },
     {
       name: "Website Design (per page - no template)",
@@ -180,7 +180,7 @@ export default function Pricing() {
       <h2 className="mx-20 text-center text-lg">Hover to learn more</h2>
       <div className="mx-20 my-10 grid h-max grid-cols-2 items-center gap-16">
         {pricingBoxes.map((item) => (
-          <PricingBox {...item} key={item.name} />
+          <PricingBox {...item} id={item.service} key={item.service} />
         ))}
       </div>
     </>

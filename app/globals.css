@@ -24,20 +24,20 @@
   transition-delay: 500ms;
 }
 
-.bg-branding-package-mockup {
-  background-image: url("/branding-package-mockup.png");
+.bg-website-design-with-template {
+  background-image: url("/website-design-with-template.png");
 }
 
-.bg-branding-package-website {
-  background-image: url("/branding-package-website.png");
+.bg-website-design-no-template {
+  background-image: url("/website-design-no-template.png");
 }
 
 .bg-branding-package {
   background-image: url("/branding-package.png");
 }
 
-.bg-color-palette-fonts {
-  background-image: url("/color-palette-fonts.png");
+.bg-color-palette-and-fonts {
+  background-image: url("/color-palette-and-fonts.png");
 }
 
 .bg-logo-design {

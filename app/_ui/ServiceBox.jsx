@@ -8,7 +8,7 @@ export default function ServiceBox({ image, text, link }) {
         href={link}
       >
         <div className="rounded-b-xl border-t-2 border-white/10 py-4 pl-4 text-left text-xl text-white backdrop-blur-3xl">
-          {text}
+          <div className="h-fit w-fit rounded-md bg-black/50 p-3">{text}</div>
         </div>
       </a>
     </>

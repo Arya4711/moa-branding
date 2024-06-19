@@ -8,12 +8,14 @@ export default function PricingBox({
   originalPrice,
   description,
   bg,
-  service
+  service,
+  id,
 }) {
   return (
     <>
       <div
         className={`bg-${bg} h-60 overflow-hidden rounded-md bg-cover bg-center bg-no-repeat text-white outline outline-2 outline-neutral-300 transition-all hover:h-[30rem]`}
+        id={id}
       >
         <div className="flex h-60 items-center justify-between px-5 py-8 text-2xl backdrop-blur-md transition-all hover:backdrop-blur-none">
           <div className="rounded-md bg-black/75 p-5">
