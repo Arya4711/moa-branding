@@ -72,6 +72,7 @@ export default function Form({
               {item.name}
             </option>
           ))}
+          <option value="not-sure">I'm not sure</option>
         </select>
       </div>
       <h1 className="text-3xl font-bold">{headers[1]}</h1>
